@@ -9,17 +9,15 @@ type Props = RectButtonProps & {
   isLoading?: boolean;
 };
 
-const Button = ({
+export function Button({
   title,
   type = "primary",
   isLoading = false,
   ...rest
-}: Props) => {
+}: Props) {
   return (
     <Container type={type} enabled={!isLoading} {...rest}>
       {isLoading ? <Load /> : <Title>{title}</Title>}
     </Container>
   );
-};
-
-export default Button;
+}

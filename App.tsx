@@ -6,7 +6,7 @@ import { DMSerifDisplay_400Regular } from "@expo-google-fonts/dm-serif-display";
 import { ThemeProvider } from "styled-components/native";
 import { AuthProvider } from "./src/hooks/auth";
 
-import SignIn from "@screens/SignIn";
+import { SignIn } from "@screens/SignIn";
 
 import theme from "./src/theme";
 
