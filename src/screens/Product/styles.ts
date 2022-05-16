@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components/native";
 import { LinearGradient } from "expo-linear-gradient";
 import { getStatusBarHeight } from "react-native-iphone-x-helper";
+import { Button } from "@components/index";
 
 export const Container = styled.KeyboardAvoidingView`
   flex: 1;
@@ -34,4 +35,17 @@ export const DeleteLabel = styled.Text`
     font-family: ${theme.FONTS.text};
     color: ${theme.COLORS.title};
   `};
+`;
+
+export const Upload = styled.View`
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0;
+`;
+
+export const PickImageButton = styled(Button)`
+  max-width: 90px;
+  margin-left: 32px;
 `;
